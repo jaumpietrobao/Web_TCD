@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Móveis Pietro Bom</title>
+    <!-- google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS Normalize - Normaliza minha pagina, deixando igual em qualquer navegador-->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+
+    <!-- Css Custom-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="brand">
+          <h1>Móveis Pietro Bom</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Locação</a></li>
+            <li><a href="#">A Empresa</a></li>
+            <li>
+              <a
+                href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                target="_blank"
+                class="whatsapp-link"
+              >
+                Fale Conosco
+              </a>
+            </li>
+            <button class="login-btn" id="login-btn">Login</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section id="banner">
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="./assets/img/thumbD.webp" alt="Banner 1" />
+            </div>
+
+            <div class="slide fade">
+              <img src="./assets/img/thumbE.webp" alt="Banner 2" />
+            </div>
+
+            <div class="slide fade">
+              <img src="./assets/img/thumbF.webp" alt="Banner 3" />
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
+        </section>
+
+        <section id="cards">
+          <h2>Modelos de Ambientes que fazemos</h2>
+          <div class="category" id="cozinhas">
+            <h3>Cozinhas</h3>
+            <div class="cards-content">
+              <div class="card">
+                <img src="./assets/img/thumb1.jpeg" alt="Cozinha Clara" />
+                <div class="card-content">
+                  <h4>Cozinha Clara</h4>
+                  <p>
+                    Espaço luminoso e arejado, com tons claros que ampliam o
+                    ambiente. A cozinha clara traz frescor e modernidade, com
+                    móveis planejados que otimizam o espaço sem comprometer o
+                    estilo, sendo ideal para quem busca um ambiente clean e
+                    prático.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb2.jpeg" />
+                <div class="card-content">
+                  <h4>Cozinha Modelo Clean</h4>
+                  <p>
+                    A proposta clean traz uma mistura de cores neutras e
+                    acabamentos de alta qualidade, criando um ambiente prático,
+                    bem organizado e visualmente agradável, perfeito para quem
+                    gosta de um estilo moderno e funcional.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb3.jpeg" />
+                <div class="card-content">
+                  <h4>Cozinha Bege</h4>
+                  <p>
+                    Com tons suaves e acolhedores, essa cozinha oferece um
+                    ambiente sofisticado e agradável. A combinação de móveis
+                    planejados e acabamentos modernos cria uma atmosfera prática
+                    e confortável para preparar as melhores refeições.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category" id="salas">
+            <h3>Salas</h3>
+            <div class="cards-content">
+              <div class="card">
+                <img src="./assets/img/thumb4.jpeg" alt="Sala Clean" />
+                <div class="card-content">
+                  <h4>Sala Clean</h4>
+                  <p>
+                    Design minimalista e funcional. A sala clean é caracterizada
+                    por cores neutras e espaços arejados, oferecendo um ambiente
+                    moderno e tranquilo, ideal para quem busca simplicidade e
+                    praticidade no dia a dia.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb5.jpeg" />
+                <div class="card-content">
+                  <h4>Sala em Tons Escuro</h4>
+                  <p>
+                    Com uma paleta de cores sóbrias, essa sala transmite
+                    elegância e aconchego. Os tons escuros, combinados com
+                    iluminação estratégica, criam um ambiente sofisticado, ideal
+                    para quem aprecia um estilo mais intimista e refinado.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb6.jpeg" />
+                <div class="card-content">
+                  <h4>Sala com Ripado</h4>
+                  <p>
+                    O uso do ripado na decoração cria um ambiente elegante e
+                    acolhedor, proporcionando uma atmosfera moderna com
+                    sofisticação. Perfeita para quem busca um espaço cheio de
+                    personalidade.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category" id="banheiros">
+            <h3>Banheiros</h3>
+            <div class="cards-content">
+              <div class="card">
+                <img src="./assets/img/thumb10.jpeg" alt="Banheiro Casal" />
+                <div class="card-content">
+                  <h4>Banheiro Casal</h4>
+                  <p>
+                    Este banheiro foi planejado para casais que buscam conforto
+                    e privacidade. Com amplas bancadas e um design que mescla
+                    praticidade com sofisticação, é o espaço ideal para momentos
+                    de relaxamento e bem-estar.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb11.jpeg" />
+                <div class="card-content">
+                  <h4>Banheiro Clean</h4>
+                  <p>
+                    Banheiro minimalista, com um design simples e elegante. A
+                    combinação de tons neutros e acabamentos refinados cria um
+                    ambiente clean, sofisticado e fácil de manter, perfeito para
+                    quem busca um espaço tranquilo e organizado.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb12.jpeg" />
+                <div class="card-content">
+                  <h4>Banheiro Pequeno</h4>
+                  <p>
+                    Este banheiro é projetado para otimizar o uso do espaço,
+                    oferecendo conforto e estilo, com acabamentos modernos e um
+                    layout que maximiza a funcionalidade sem perder o charme.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category" id="quartos">
+            <h3>Quartos</h3>
+            <div class="cards-content">
+              <div class="card">
+                <img src="./assets/img/thumb7.jpeg" alt="Quarto Casal Grande" />
+                <div class="card-content">
+                  <h4>Quarto Casal Grande</h4>
+                  <p>
+                    Um quarto amplo e sofisticado, projetado para proporcionar
+                    conforto e bem-estar. Com móveis sob medida, a combinação de
+                    espaços generosos e design elegante cria um ambiente de
+                    relaxamento e tranquilidade, perfeito para casais.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb8.jpeg" />
+                <div class="card-content">
+                  <h4>Quarto Solteiro</h4>
+                  <p>
+                    Ambiente moderno e versátil, perfeito para o descanso e
+                    organização de um único morador. Com opções de mobiliário
+                    que combinam funcionalidade e charme, esse quarto é ideal
+                    para quem procura otimizar o espaço com estilo.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/img/thumb9.jpeg" />
+                <div class="card-content">
+                  <h4>Quarto Casal Pequeno</h4>
+                  <p>
+                    Um quarto funcional e aconchegante, ideal para casais que
+                    buscam praticidade e conforto. Oferece um ambiente acolhedor
+                    com soluções de armazenamento que aproveitam cada centímetro
+                    disponível, sem abrir mão do estilo.
+                  </p>
+                  <div class="card-price">
+                    <a
+                      href="https://wa.me/5546991157965?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20móveis%20sob%20medida."
+                      target="_blank"
+                      class="whatsapp-link"
+                    >
+                      Faça um Orçamento
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="values">
+          <h2>Quem nós somos</h2>
+          <div class="values-content">
+            <img src="" />
+            <div class="values-text">
+              <p>
+                Móveis Pietro Bom, transformamos espaços em ambientes únicos com
+                móveis sob medida que aliam design, funcionalidade e alta
+                qualidade. Aqui, cada projeto é planejado para refletir o seu
+                estilo e atender às suas necessidades, otimizando cada
+                centímetro do seu ambiente. Trabalhamos com materiais de
+                primeira linha e acabamento impecável para oferecer soluções
+                personalizadas que valorizam seu espaço e proporcionam conforto
+                e sofisticação. Seja para sua casa ou escritório, conte conosco
+                para criar móveis que fazem a diferença.
+              </p>
+              <div class="values-detail">
+                <div class="value">
+                  <p>Qualidade</p>
+                  <p>Agilidade</p>
+                </div>
+                <div class="value">
+                  <p>Confiável</p>
+                  <p>Planejamento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="values"></section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company">
+            <p class="footer-brand">Móveis Pietro Bom</p>
+            <p>
+              Móveis sob medida: criados para se encaixar perfeitamente no seu
+              espaço e no seu estilo de vida, oferecendo funcionalidade,
+              conforto e design exclusivo que refletem sua personalidade em cada
+              detalhe.
+            </p>
+          </div>
+
+          <div class="footer-menu">
+            <p class="footer-menu-title">Nossa Empresa</p>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Missão e Valores</a></li>
+              <li><a href="#values">Nossos Valores</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <p class="footer-menu-title">Contatos</p>
+            <ul>
+              <li>+55 46 9 9999-9999</li>
+              <li>Rua Das Margaridas</li>
+              <li>Pato Branco - PR</li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <p class="footer-menu-title">Parceiros</p>
+            <li>
+              <ul>
+                <a href="#">DDDDD</a>
+              </ul>
+              <ul>
+                <a href="#">DDDDD</a>
+              </ul>
+            </li>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <span class="facebook"></span>
+          <span class="twitter"></span>
+          <span class="instagram"></span>
+          <span class="Linkedin"></span>
+        </div>
+        <div class="footer-compyright">
+          <p>&#169; 2024 - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let slideIndex = 0;
+
+      // Função para mostrar os slides automaticamente
+      function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Troca a cada 5 segundos
+      }
+
+      // Navegação manual
+      function changeSlide(n) {
+        slideIndex += n - 1;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlides();
+      }
+
+      // Inicia o slideshow
+      showSlides();
+    </script>
+    <script>
+      document
+        .getElementById("login-btn")
+        .addEventListener("click", function () {
+          window.location.href = "indexLogin.html"; // Redireciona para a página de login
+        });
+    </script>
+  </body>
+</html>

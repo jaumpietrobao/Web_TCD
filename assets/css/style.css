@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+header {
+  background-color: #01528a;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .brand img {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+head .brand h1 {
+  font-size: 24px;
+  color: #01528a;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap:1rem;
+}
+
+header nav li {
+  font-weight: 300;
+    line-height: 2rem;}
+
+header nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #0889d4;
+}
+
+header nav a.active {
+  font-weight: 500;
+  border-bottom: 2px solid #0889d4;
+}
+
+header nav button {
+  background-color: #0889d4;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-left: 1rem;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%; /* Reduz a largura para 80% da tela */
+  height: 800px; /* Define uma altura fixa */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Cada slide */
+.slide {
+  display: none;
+  position: relative;
+}
+
+/* Imagens do slide */
+.slide img {
+  width: 100%; /* Mantém responsivo dentro do container */
+  height: 100%; /* Ajusta a altura para caber no container */
+  object-fit: cover; /* Corta a imagem para preencher o espaço */
+}
+
+/* Texto sobre o slide */
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Controles de navegação */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Animação de transição */
+.fade {
+  animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#banner {
+  height: 550px;
+  border: 1px solid #dcdceb;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  color: #01528a;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#banner .banner-content {
+  width: 650px;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #fff 50%);
+}
+
+#banner h3 {
+  margin: 0;
+  }
+
+#banner .banner-body1 {
+  padding: 3.75rem 0 0 2.8rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+#banner .banner-body2 {
+  margin-top: 1rem;
+  margin-left: 2.8rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+section {
+  margin-top: 4rem;
+}
+
+section h2 {
+  padding: 2rem 0;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000';
+}
+
+#cards .cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#cards .card {
+  width: 300px; /* Largura fixa para todos os cards */
+  height: 400px; /* Altura fixa para manter o mesmo tamanho */
+  display: flex;
+  flex-direction: column; /* Alinhar conteúdo verticalmente */
+  justify-content: space-between; /* Espaçar os itens dentro do card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#cards .card img {
+  width: 100%;
+  height: 200px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Corta ou redimensiona para preencher sem deformar */
+}
+
+#cards .card-content {
+  padding: 10px;
+  flex-grow: 1; /* Faz o conteúdo preencher o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.category h3 {
+  font-size: 2.5rem; /* Tamanho maior para destacar */
+  margin-bottom: 15px; /* Espaçamento entre o título e os modelos */
+  color: #0889d4; /* Cor para o título */
+  text-transform: uppercase; /* Opcional: transforma o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  font-weight: 300;
+}
+
+.cards-content {
+  margin-top: 10px;
+}
+
+#cards .category {
+  margin-bottom: 40px;
+}
+
+#cards .card-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cards .card-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card-content .alt-text {
+  font-size: 0.8rem; /* Tamanho menor para o texto alternativo */
+  color: #ddd; /* Cor mais clara */
+  font-style: italic; /* Para diferenciar o texto alternativo */
+}
+
+.card-price {
+  margin-top: 10px; /* Espaçamento acima do botão */
+  font-weight: bold;
+  color: #01528a;
+}
+
+#reasons .reasons-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reasons .reason {
+  border-left: 2px solid #0889d4;
+  width: 100%;
+}
+
+#reasons .reason:first-of-type {
+  border-left: none;
+}
+
+#reasons .reason p {
+  text-align: center;
+}
+
+#reasons .reason-value {
+  font-size: 2rem;
+}
+
+#reasons .reason-label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #8f90a6;
+}
+
+
+#values .values-content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#values .values-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  gap: 1rem;
+}
+
+#values .values-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 300;
+}
+
+#values .values-text .values-detail {
+  padding: 1.5rem;
+}
+
+#values .values-detail .value {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+#values .value p {
+  background-image: url("../img/bullet-values.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+
+footer {
+  background-color: hsl(234, 93%, 43%);
+  color: #ffffff;
+  margin-top: 3rem;
+  padding: 3rem 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-company {
+  width: 450px;
+}
+
+footer .footer-brand {
+  color: #000;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 2rem;
+  padding-left: 2.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+footer .footer-company p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer .footer-menu {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer .footer-menu-title {
+  font-weight: 400;
+}
+
+footer .footer-menu ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+footer .footer-menu li {
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-menu li {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-menu a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-social {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+
+footer .footer-social span {
+  background-repeat: no repeat;
+  background-position: center;
+  padding: 1rem;
+}
+
+footer .footer-social .facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+footer .footer-social .twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+footer .footer-social .instagram {
+  background-image: url("../img/icon-instagram.svg");
+}
+
+footer .footer-social .Linkedin {
+  background-image: url("../img/icon-linkedin.svg");
+}
+
+footer .footer-copyright {
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+}
+/*Estilho do Link WhatsApp*/
+.whatsapp-link {
+  color: inherit; /* Herdar a cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.whatsapp-link:hover {
+  color: #25d366; /* Verde do WhatsApp */
+  text-decoration: underline;
+}
