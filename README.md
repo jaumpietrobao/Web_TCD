@@ -1,8 +1,8 @@
-# Site - Jordani Moda Masculina
+# Site - Móveis Pietro Bom
 
-Este projeto foi desenvolvido como parte da Atividade Bimestral (TCD) e consiste em um site para uma loja de roupas masculinas.
+Este projeto foi desenvolvido como parte da Atividade Bimestral (TCD) e consiste em um site para Area Moveleira.
 
-**Link para Visualização**: [Jordani Moda Masculina](https://gustavosiega.github.io/TCD-Site-Loja/)
+**Link para Visualização**: [Móveis Pietro Bom]()
 
 ---
 
