@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como parte da Atividade Bimestral (TCD) e consiste em um site para Area Moveleira.
 
-**Link para Visualização**: [Móveis Pietro Bom](https://github.com/jaumpietrobao/Web_TCD/)
+**Link para Visualização**: [Móveis Pietro Bom][(https://github.com/jaumpietrobao/Web_TCD/](http://127.0.0.1:5500/index.html))
 
 ---
 
